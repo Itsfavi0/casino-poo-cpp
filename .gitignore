@@ -1,0 +1,11 @@
+# Binarios y compilación
+*.exe
+*.o
+*.obj
+*.out
+build/
+
+# IDEs
+.vs/
+.vscode/
+*.user
