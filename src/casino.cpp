@@ -23,9 +23,9 @@ void Titulo(const std::string& texto) {
 }  // namespace
 
 Casino::Casino() {
-    juegos.push_back(std::unique_ptr<Juego>(new CartaMayor(azar)));
-    juegos.push_back(std::unique_ptr<Juego>(new Ruleta(azar)));
-    juegos.push_back(std::unique_ptr<Juego>(new Mundialito(azar)));
+    juegos.push_back(std::make_unique<CartaMayor>(azar));
+    juegos.push_back(std::make_unique<Ruleta>(azar));
+    juegos.push_back(std::make_unique<Mundialito>(azar));
 }
 
 // -------------------------------------------------------------------------
